@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Auth;
 class AdminController extends Controller
 {
     public function dashboard(Request $reequst)
     {
-        return view("admin.dashboard");
+        if(Auth::guard('admin')->check())
+        {
+            return view("admin.dashboard");
+        }
+        else
+        {
+            return redirect("admin/login");
+        }
     }
 }

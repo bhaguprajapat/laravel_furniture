@@ -9,7 +9,7 @@
                         <img src="{{URL::to('/')}}/public/admin/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
                     </div>
                     <div class="">
-                        <h4 class="logo-text">Rocker</h4>
+                        <h4 class="logo-text">Dharma Furniture</h4>
                     </div>
                 </div>
                 <div class="mobile-toggle-menu d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><i class='bx bx-menu'></i></div>
@@ -613,7 +613,7 @@
                         <li>
                             <div class="dropdown-divider mb-0"></div>
                         </li>
-                        <li><a class="dropdown-item d-flex align-items-center" href="javascript:;"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
+                        <li><a class="dropdown-item d-flex align-items-center" href="{{route('admin.logout')}}"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
                         </li>
                     </ul>
                 </div>

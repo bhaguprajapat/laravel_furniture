@@ -2,6 +2,7 @@
 <body class="">
 	<!--wrapper-->
 	<div class="wrapper">
+		@include("admin.includes.flash_msg")
 		<div class="section-authentication-cover">
 			<div class="">
 				<div class="row g-0">
@@ -37,7 +38,7 @@
 											<div class="col-12">
 												<label for="inputChoosePassword" class="form-label">Password</label>
 												<div class="input-group" id="show_hide_password">
-													<input type="password" class="form-control border-end-0" name="password" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+													<input type="password" class="form-control border-end-0" name="password" placeholder="Enter Password" required> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
 												</div>
 											</div>
                                             <div class="col-12">
